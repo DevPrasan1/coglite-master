@@ -1,0 +1,16 @@
+
+.jumbotron {text-align: center;width: 30rem;top: 0;bottom: 0;left: 0;right: 0;position: absolute;margin: auto;background-color: #fff;padding: 2rem;height:500px;width:450px;
+-webkit-box-shadow: 0px 0px 5px 5px rgba(221,222,223,0.7);-moz-box-shadow: 0px 0px 5px 5px rgba(221,222,223,0.7);box-shadow: 0px 0px 5px 5px rgba(221,222,223,0.7);}
+.container .glyphicon-list-alt {font-size: 10rem;color: #f96145;}
+h2 {margin-bottom: 3rem;font-weight: bold;color: #ababab;}
+.btn {border-radius: 0.2rem;}
+.btn .glyphicon {font-size: 2.8rem;}
+.full-width {width: 100%;}
+.box {position: absolute;left: 0;}
+.ops_text{font-size:30px;font-weight:bold;color:#ababab;width:320px;margin:0 auto;}
+.flag{text-align: center;width: 30rem;bottom:210px;left: 0;right:153px;position: absolute;margin: auto;}
+.impressum{text-align:left;font-size:14px;color:#ababab;padding-bottom:10px;}
+.impressum_address{text-align:left;font-size:12px;color:#ababab;}
+.impressum_address p{margin-bottom:0px !important;}
+.padding_top_120{padding-top:120px;}
+.impressum_p p{margin-bottom:0px !important;}

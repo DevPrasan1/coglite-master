@@ -1,0 +1,29 @@
+/*Overwrite Css*/
+md-button:hover{
+     color: #fff;
+ }
+ .header-wrapper{padding-right:0px !important;width:100%;}
+ .custom_menu li{display:inline-block;}
+ .custom_menu li a{color:#fff;}
+ .logout{float:right;min-width:initial;margin:0px 0px;}
+ .logout button .glyphicon{position:relative;right:10px;top:0px;}
+ .navbar-default{background:#005074;}
+ .navbar-default .navbar-nav>li>a{color:#fff;}
+ .logout{color:#fff;}
+ .logout .mat-button{padding: 7px 5px 7px 25px;}
+ .navbar-nav>li>a{padding-top: 0px;padding-bottom: 0px;text-align: left}
+ .navbar_text .nav li a{text-align:center}
+ .color_white{color:#fff;}
+ 
+ /*.logout button{padding:7px;}*/
+@media(max-width:767px){
+    .navbar_text .nav li a{text-align:left;}
+}
+
+@media(min-width:768px) and (max-width:991px){
+    .navbar_text .nav li a{text-align:left;}
+}
+
+@media(min-width:992px) and (max-width:1279px){
+    
+}

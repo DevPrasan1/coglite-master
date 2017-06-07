@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+		"target": "es5",
+	    "module": "commonjs",
+	    "moduleResolution": "node",
+	    "sourceMap": true,
+	    "emitDecoratorMetadata": true,
+	    "experimentalDecorators": true,
+	    "lib": [ "es2015", "dom" ],
+	    "noImplicitAny": false,
+	    "outDir":"app/compiledSrc/"
+    },
+    "exclude": [
+	    "node_modules",
+	    "typings/main",
+	    "typings/main.d.ts",
+	    "app/dist",
+		"app/compiledSrc/",
+		"app/config/",
+		"app/vendor.ts",
+		"app/polyfills.ts"
+  	]
+}

@@ -1,0 +1,27 @@
+<div class="modal-header modal-border dialog-popup-header">
+    <div class="pull-left test">
+        <div class="modal-title font_size_18 color-white">
+            {{ title }}
+        </div>
+    </div>
+    <div class="pull-right">
+        <!--<button md-mini-fab type="button" (click)="close()"><i class="fa fa-times"></i></button>-->
+        <div (click)="dialogRef.close(false)"><i class=" fa fa-times color-white cursor-pointer"></i></div>
+    </div>
+</div>
+<div class="modal-body clearfix dialog-content">
+    <div class="main_innerpage">
+        {{ message }}
+    </div>
+</div>
+<div class="modal-footer dialog-footer">
+    <!--<button md-raised-button color="primary" type="button" [disabled]="!filterObj.nameOfFilter || isApiCall===true" (click)="save()">
+        <span> Save  <i *ngif="isApiCall===true" class="fa fa-circle-o-notch fa-spin margin_left_10"></i></span>
+    </button>-->
+    <button md-raised-button color="primary" type="button" (click)="dialogRef.close(true)">OK</button>
+    <button md-raised-button color="primary" type="button" (click)="dialogRef.close(false)">Cancel</button>
+</div>
+
+
+
+

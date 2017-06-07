@@ -1,0 +1,19 @@
+
+
+<div class="wrapper">
+    <div class="sidebar" data-color='red' data-image="">
+        <sidebar-cmp></sidebar-cmp>
+        <div class="sidebar-background" style="background-image: url(../assets/img/sidebar-4.jpg)"></div>
+    </div>
+    <div class="main-panel">
+        <navbar-cmp></navbar-cmp>
+		<router-outlet></router-outlet>
+       <!-- <dashboard-cmp></dashboard-cmp>-->
+       <!-- <div *ngIf="isMaps('/maps')">
+            <footer-cmp></footer-cmp>
+        </div>-->
+    </div>
+</div>
+ <!--Toaster Container for receiving toaster -->
+<toaster-container [toasterconfig]="toasterconfig"></toaster-container> 
+<button md-button *ngIf="'false'"></button>

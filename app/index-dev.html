@@ -1,0 +1,360 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dashboard</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="/">
+
+    <!-- Bootstrap Style -->
+    <link rel="stylesheet" type="text/css" href="common/css/common.css">
+    <link rel="stylesheet" type="text/css" href="common/css/media.css">
+  <!--  <link rel="stylesheet" type="text/css" href="common/css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="/npm-libs/@angular/material/prebuilt-themes/indigo-pink.css">
+    <link rel="stylesheet" type="text/css" href="common/css/app-theme.css">
+	
+    <!-- Bootstrap core CSS     -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="/npm-libs/angular2-toaster/toaster.css" />
+
+    <link rel="stylesheet" href="common/css/font-awesome.min.css">
+	<!--  Material Dashboard CSS    -->
+    <link href="assets/css/material-dashboard.css?v=1.2.0" rel="stylesheet"/>
+
+    <!--  CSS for Demo Purpose, don't include it in your project     -->
+    <link href="assets/css/demo.css" rel="stylesheet" />
+
+    <!--     Fonts and icons     -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,300|Material+Icons' rel='stylesheet' type='text/css'>
+
+    <!-- 1. Load Polyfill(s) for older browsers -->
+    <script type="text/javascript" src="/npm-libs/core-js/client/shim.min.js"></script>
+
+    <!-- 2. Load Files required for angular change tracker -->
+    <script type="text/javascript" src="/npm-libs/zone.js/dist/zone.js"></script>
+    <script type="text/javascript" src="/npm-libs/systemjs/dist/system.src.js"></script>
+    <!--<script type="text/javascript" src="/npm-libs/moment/moment.js"></script>-->
+
+    <!-- 3. Load systemjs -->
+    <script type="text/javascript" src="systemjs.config.js"></script>
+    <script type="text/javascript">
+        System.import('app').catch(function (err) { console.error(err) });
+    </script>
+    <style>
+        .cssload-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 50px;
+            height: 50px;
+            margin: -49px 0 0 -49px;
+            text-align: left;
+            animation: cssload-rotate linear 3.68s infinite;
+            -o-animation: cssload-rotate linear 3.68s infinite;
+            -ms-animation: cssload-rotate linear 3.68s infinite;
+            -webkit-animation: cssload-rotate linear 3.68s infinite;
+            -moz-animation: cssload-rotate linear 3.68s infinite;
+        }
+
+        .cssload-sphere {
+            position: absolute;
+        }
+
+        .cssload-sphere:before,
+        .cssload-sphere:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 50%;
+            background: rgb(255, 99, 71);
+        }
+
+        .cssload-sphere:before {
+            top: 0;
+            border-radius: 974px 974px 0 0;
+            animation: cssload-top ease 0.92s alternate infinite;
+            -o-animation: cssload-top ease 0.92s alternate infinite;
+            -ms-animation: cssload-top ease 0.92s alternate infinite;
+            -webkit-animation: cssload-top ease 0.92s alternate infinite;
+            -moz-animation: cssload-top ease 0.92s alternate infinite;
+        }
+
+        .cssload-sphere:after {
+            bottom: 0;
+            border-radius: 0 0 974px 974px;
+            animation: cssload-bottom ease 0.92s alternate infinite;
+            -o-animation: cssload-bottom ease 0.92s alternate infinite;
+            -ms-animation: cssload-bottom ease 0.92s alternate infinite;
+            -webkit-animation: cssload-bottom ease 0.92s alternate infinite;
+            -moz-animation: cssload-bottom ease 0.92s alternate infinite;
+            background: rgb(135, 206, 235);
+        }
+
+        .cssload-s-1 {
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+
+        .cssload-s-2 {
+            top: 10px;
+            right: 10px;
+            bottom: 10px;
+            left: 10px;
+        }
+
+        .cssload-s-3 {
+            top: 19px;
+            right: 19px;
+            bottom: 19px;
+            left: 19px;
+        }
+
+        .cssload-s-4 {
+            top: 29px;
+            right: 29px;
+            bottom: 29px;
+            left: 29px;
+        }
+
+        .cssload-s-5 {
+            top: 39px;
+            right: 39px;
+            bottom: 39px;
+            left: 39px;
+        }
+
+        .cssload-s-gold {
+            top: 49px;
+            right: 49px;
+            bottom: 49px;
+            left: 49px;
+        }
+
+        .cssload-s-2:before,
+        .cssload-s-2:after {
+            background: rgb(250, 235, 215);
+            animation-delay: 57.5ms;
+            -o-animation-delay: 57.5ms;
+            -ms-animation-delay: 57.5ms;
+            -webkit-animation-delay: 57.5ms;
+            -moz-animation-delay: 57.5ms;
+        }
+
+        .cssload-s-3:before,
+        .cssload-s-3:after {
+            animation-delay: 115ms;
+            -o-animation-delay: 115ms;
+            -ms-animation-delay: 115ms;
+            -webkit-animation-delay: 115ms;
+            -moz-animation-delay: 115ms;
+        }
+
+        .cssload-s-4:before,
+        .cssload-s-4:after {
+            background: rgb(250, 235, 215);
+            animation-delay: 172.5ms;
+            -o-animation-delay: 172.5ms;
+            -ms-animation-delay: 172.5ms;
+            -webkit-animation-delay: 172.5ms;
+            -moz-animation-delay: 172.5ms;
+        }
+
+        .cssload-s-5:before,
+        .cssload-s-5:after {
+            animation-delay: 230ms;
+            -o-animation-delay: 230ms;
+            -ms-animation-delay: 230ms;
+            -webkit-animation-delay: 230ms;
+            -moz-animation-delay: 230ms;
+        }
+
+        .cssload-s-gold:before,
+        .cssload-s-gold:after {
+            background: rgb(255, 215, 0);
+            box-shadow: 0 0 49px rgb(255, 215, 0);
+            animation: none;
+            -o-animation: none;
+            -ms-animation: none;
+            -webkit-animation: none;
+            -moz-animation: none;
+        }
+
+
+
+
+
+        @keyframes cssload-rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @-o-keyframes cssload-rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @-ms-keyframes cssload-rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @-webkit-keyframes cssload-rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @-moz-keyframes cssload-rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes cssload-top {
+            from {
+                top: 0;
+            }
+            to {
+                top: -60%;
+            }
+        }
+
+        @-o-keyframes cssload-top {
+            from {
+                top: 0;
+            }
+            to {
+                top: -60%;
+            }
+        }
+
+        @-ms-keyframes cssload-top {
+            from {
+                top: 0;
+            }
+            to {
+                top: -60%;
+            }
+        }
+
+        @-webkit-keyframes cssload-top {
+            from {
+                top: 0;
+            }
+            to {
+                top: -60%;
+            }
+        }
+
+        @-moz-keyframes cssload-top {
+            from {
+                top: 0;
+            }
+            to {
+                top: -60%;
+            }
+        }
+
+        @keyframes cssload-bottom {
+            from {
+                bottom: 0;
+            }
+            to {
+                bottom: -60%;
+            }
+        }
+
+        @-o-keyframes cssload-bottom {
+            from {
+                bottom: 0;
+            }
+            to {
+                bottom: -60%;
+            }
+        }
+
+        @-ms-keyframes cssload-bottom {
+            from {
+                bottom: 0;
+            }
+            to {
+                bottom: -60%;
+            }
+        }
+
+        @-webkit-keyframes cssload-bottom {
+            from {
+                bottom: 0;
+            }
+            to {
+                bottom: -60%;
+            }
+        }
+
+        @-moz-keyframes cssload-bottom {
+            from {
+                bottom: 0;
+            }
+            to {
+                bottom: -60%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <my-app>
+        <div class="cssload-container">
+                <div class="cssload-sphere cssload-s-gold"></div>
+                <div class="cssload-sphere cssload-s-5"></div>
+                <div class="cssload-sphere cssload-s-4"></div>
+                <div class="cssload-sphere cssload-s-3"></div>
+                <div class="cssload-sphere cssload-s-2"></div>
+                <div class="cssload-sphere cssload-s-1"></div>
+        </div>
+    </my-app>
+</body>
+<!--   Core JS Files   -->
+<script src="assets/js/jquery-3.1.0.min.js" type="text/javascript"></script>
+<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="assets/js/arrive.min.js"></script>
+<script src="assets/js/material.min.js" type="text/javascript"></script>
+
+<!--  Charts Plugin -->
+<script src="assets/js/chartist.min.js"></script>
+
+<!--  Notifications Plugin    -->
+<script src="assets/js/bootstrap-notify.js"></script>
+
+<!--  Google Maps Plugin    -->
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4jaevBJLpsSdhfp6lqgssE257-U-PoUY"></script>
+
+<!-- Material Dashboard javascript methods -->
+<script src="assets/js/material-dashboard.js?v=1.2.0"></script>
+
+<!-- Material Dashboard DEMO methods, don't include it in your project! -->
+<script src="assets/js/demo.js"></script>
+
+</html>

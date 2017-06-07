@@ -1,0 +1,22 @@
+// Angular
+import '@angular/core';
+import '@angular/common';
+import '@angular/compiler';
+import '@angular/forms';
+import '@angular/platform-browser';
+import '@angular/platform-browser-dynamic';
+import '@angular/router';
+import '@angular/material';
+import '@angular/http';
+import 'angular2-toaster';
+import 'angular-2-dropdown-multiselect';
+import 'ng2-clipboard';
+import '@ngx-translate/core';
+import '@ngx-translate/http-loader';
+import 'moment';
+import 'angular2-moment';
+import 'lodash';
+import 'ng2-bootstrap';
+
+// RxJS
+import 'rxjs';

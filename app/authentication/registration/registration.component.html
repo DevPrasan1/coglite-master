@@ -1,0 +1,63 @@
+<form name="loginForm">
+
+    <div class="jumbotron impressum_p">
+        
+            <div class="clearfix">
+                <div class="ops_text clearfix">
+                    <div class="pull-left"><!--<img src="../../images/ops_logo.png" />--></div>
+
+                    <div class="pull-left padding_top_15 padding_left_5">Sign Up</div>
+                </div>
+            </div>
+            <div class="clearfix col-lg-24 col-md-24 col-sm-24 col-xs-24 padding_top_30">
+                <!--Username-->
+                <div class="clearfix col-lg-24 col-md-24 col-sm-24 col-xs-24 padding_l_r_0  padding_top_10">
+                    <div class="col-lg-24 col-md-24 col-sm-24 col-xs-24  input_wrapper padding_l_r_0">
+                        <md-input-container>
+                            <input mdInput type="text" name="login" [(ngModel)]="userName"  placeholder="Email" required>
+                        </md-input-container>
+                    </div>
+                </div>
+                <!--Username End-->
+
+                <!--Password-->
+                <div class="col-lg-24 col-md-24 col-sm-24 col-xs-24 padding_l_r_0 padding_top_30">
+                    <div class="col-lg-24 col-md-24 col-sm-24 col-xs-24 input_wrapper  padding_l_r_0">
+                        <md-input-container>
+                            <input mdInput type="password" name="password" [(ngModel)]="password" placeholder="Password" required>
+                        </md-input-container>
+                    </div>
+                </div>
+                <!--Password End-->
+
+                 <!--Button-->
+                <div class="col-lg-24 col-md-24 col-sm-12 col-xs-24 padding_l_r_0 padding_top_30">
+                    <div class="col-lg-24 col-md-24 col-sm-24 col-xs-24 padding_l_r_0">
+                        <div class="pull-right">
+                            <button md-raised-button name="signup" color="primary" value="SignUp" [disabled]="!userName || !password" class="btn btn-default full-width" (click)="register()">
+                                <span class="glyphicon glyphicon-arrow-right"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!--Button End-->
+
+                 <!--Impressum-->
+            
+                <!--Impressum End-->
+                
+              
+            </div>
+      
+    </div>
+    <div class="flag">
+        <div class="flag-icon">
+            <div class="pull-left">
+                <!--<img src="../../images/GermanLogo.png" />-->
+            </div>
+            <div class="pull-left padding_left_10">
+                <!--<img src="../../images/EnglishLogo.png" />-->
+            </div>
+        </div>
+    </div>
+</form>

@@ -1,0 +1,70 @@
+/*mobile css start*/
+@media(max-width:767px){
+	.dropdown_wrapper{padding-right: 0px;}
+	textarea{width: 100%;}
+	.k-pager-wrap .k-label{display: none}
+	.dropdown_wrapper.padding_top_2{padding-top:15px !important;}
+	.padding_left_15_xs{padding-left: 15px !important}
+	.country-wrapper.padding_l_0{padding-left: 0px;}
+	.foia_return .mat-input-container{width: 100%}
+	.datepicker-wrapper{padding-left: 0px !important;padding-right: 0px !important;}
+	.dropdown_wrapper.padding_top_6{padding-top: 20px !important;}
+	.logout{float:left !important;}
+	.navbar{margin-bottom: 0px !important}
+	.row{margin-left: 0px !important;margin-right: 0px !important;}
+	.padding_top_10_xs{padding-top:10px;}
+	.padding_top_15_xs{padding-top:15px;}
+	.activity_button_wrapper .mat-raised-button{margin-bottom:10px;}
+	.margin_right_4_xs{margin-right:4px !important;}
+	.padding_left_0_xs{padding-left:0px !important;}
+	.padding_right_0_xs{padding-right:0px !important; }
+	.customer_card{padding-left:0px !important;padding-right:0px !important;}
+	.margin_left_15_xs{margin-left:15px !important;}
+	.margin_right_15_xs{margin-right:15px !important;}
+	.padding_top_20_xs{padding-top:20px !important;}
+	.button_align{float:left !important;}
+	.padding_left_right_0_xs{padding-left:0px !important;padding-right:0px !important;}
+	.margin_left_0_xs{margin-left:0px !important;}
+	.customer_header{display:block !important;}
+	.lg_customer_header{display:none !important;}
+}
+/*mobile css end*/
+
+/*tablet css start*/
+@media(min-width:768px) and (max-width:991px)
+{
+	.button_align{float:left !important;}
+	.checkbox_wrap.padding_l_0{padding-left: 15px !important;}
+	.padding_left_15_xs{padding-left:15px !important}
+	.checkbox_wrap .mat-checkbox .mat-checkbox-layout .mat-checkbox-label{width: 100%}
+	.foia_return .mat-input-container{width: 100%}
+	.country-wrapper .mat-select{width: 49%;padding-left:15px;}
+	.input-wrapper .mat-input-wrapper{margin-top: 15px!important;}
+	.checkbox_wrap{padding-left: 15px;}
+	.datepicker-wrapper{padding-left: 0px !important;}
+	.datepicker-wrapper:nth-child(2n){padding-left: 15px !important;}
+	.logout{float:left;}
+	.navbar{margin-bottom: 0px !important}
+	.padding_top_15_xs{padding-top: 15px !important}
+	.padding_top_25_sm{padding-top:25px;}
+	.padding_top_20_sm{padding-top:20px !important;}
+	.padding_top_10_sm{padding-top:10px !important;}
+	.padding_top_15_sm{padding-top:15px;}
+	.pull_left_sm.pull-right{float:left !important;}
+	.padding_right_120_sm{padding-right:120px;}
+	.padding_left_0_sm{padding-left:0px;}
+	.padding_left_sm_32{padding-left:32px !important;}
+	.customer_header{display:block !important;}
+	.lg_customer_header{display:none !important;}
+	
+	}
+/*tablet css end*/
+/*small desktop css start*/
+@media(min-width:992px) and (max-width:1279px)
+{
+	.padding_top_10_md{padding-top:10px;}
+	.padding_right_25_lg{padding-right:25px;}
+	.customer_header{display:block !important;}
+	.lg_customer_header{display:none !important;}
+}
+/*small desktopcss end*/
